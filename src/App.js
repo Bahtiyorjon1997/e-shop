@@ -4,10 +4,10 @@ import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div>
-      <Route exact path='/' component = { HomePage  } />
-      <Route  path='/hats' component = { Hats } />
-    </div>
+    <Routes>
+      <Route exact path='/' element={ <HomePage /> } /> 
+      <Route  exact path='/hats' element = { <Hats/> } />
+    </Routes>
   );
 }
 
